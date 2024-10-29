@@ -29,7 +29,7 @@
             <img src="img/pickup/image.jpg" alt="">
             <div>
                 <p class="pickup-text">
-                    멋진 사진
+                    Hello
                 </p>
             </div>
             <div class="read-more">
@@ -40,7 +40,7 @@
             <img src="img/pickup/image-2.jpg" alt="">
             <div>
                 <p class="pickup-text">
-                    멋진 사진
+                    Hello
                 </p>
             </div>
             <div class="read-more">
@@ -51,7 +51,7 @@
             <img src="img/pickup/image-3.jpg" alt="">
             <div>
                 <p class="pickup-text">
-                    멋진 사진
+                    Hello
                 </p>
             </div>
             <div class="read-more">
@@ -61,7 +61,19 @@
     </div>
 
     <div class="container">
-        <main></main>
+        <main>
+            <div class="blog-card">
+                <h2>タイトル</h2>
+                <div class="small-into">
+                    <div>2024/10/31</div>
+                    <div>カテゴリー</div>
+                </div>
+                <img src="img/card-image.jpg" alt="" class="card-image-large">
+                <div class="card-text">
+                    안녕하십니까저는지금매우지쳐있습니다누군가살려주십시오
+                </div>
+            </div>
+        </main>
         <aside></aside>
     </div>
 
@@ -71,8 +83,11 @@
 <style>
     body {
         color: #333;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+        margin: 0;
+    }
+    h2 {
         margin: 0;
     }
     .top-image {
@@ -100,7 +115,9 @@
     }
 
     .pickup {
-        width: 100%;
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-around;
     }
     .pickup-card {
         width: 32%;
@@ -109,7 +126,7 @@
         width: 100%;
     }
     .pickup-text {
-        font-size: 16px;
+        font-size: 18px;
         margin: 0;
     }
     .read-more {
@@ -118,6 +135,55 @@
     .read-more a {
         font-size: 12px;
         color: #333;
+    }
+
+    .container {
+        display: flex;
+        margin-top: 64px;
+        /* justify-content: space-between; */
+    }
+    main {
+        /* background-color: blue; */
+        width: 70%;
+    }
+    aside {
+        height: 50px;
+        background-color: red;
+        width: 30%;
+    }
+    .small-into {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+        margin-top: 8px;
+    }
+    .blog-card {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 24px;
+    }
+    .card-image-large {
+        width: 100%;
+    }
+    .card-text {
+        margin-top: 8px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .pickup {
+            flex-direction: column;
+            align-items: center;
+        }
+        .pickup-card {
+            width: 90%;
+            margin-bottom: 24px;
+        }
+
     }
 </style>
 
