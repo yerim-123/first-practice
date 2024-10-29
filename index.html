@@ -1,197 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Blog</title>
-    <meta name="description" content="테스트테스트">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header">
-        <hi class="site-title wrapper">
-            <h1>Travel Blog</h1>
-        </hi>
-        <div class="nav-black">
-            <div class="nav-item">NEW</div>
-            <div class="nav-item">COLUMN</div>
-            <div class="nav-item">SERIES</div>
-            <div class="nav-item">Q&A</div>
-            <div class="nav-item">CONTACT</div>
+    <header>
+        <div class="top-image">
+        <img src="img/logo.svg" alt="">
         </div>
+        <nav>
+            <ul>
+                <li><a href="/link.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Q&A</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div id="pickup" class="wrapper">
-        <article>
-            <img src="pickup1.jpg" alt="test">
-            <h2 class="article-title">testtest</h2>
-            <div class="readmore"><a href="#">READ MORE</a></div>
-        </article>
-
-        <article>
-            <img src="pickup2.jpg" alt="test">
-            <h2 class="article-title">testtest</h2>
-            <div class="readmore"><a href="#">READ MORE</a></div>
-        </article>
-
-        <article>
-            <img src="pickup3.jpg" alt="test">
-            <h2 class="article-title">testtest</h2>
-            <div class="readmore"><a href="#">READ MORE</a></div>
-        </article>
+    <div class="pickup">
+        <div class="pickup-card">
+            <img src="img/pickup/image.jpg" alt="">
+            <div>
+                <p class="pickup-text">
+                    멋진 사진
+                </p>
+            </div>
+            <div class="read-more">
+                <a href="#">READ MORE</a>
+            </div>
+        </div>
+        <div class="pickup-card">
+            <img src="img/pickup/image-2.jpg" alt="">
+            <div>
+                <p class="pickup-text">
+                    멋진 사진
+                </p>
+            </div>
+            <div class="read-more">
+                <a href="#">READ MORE</a>
+            </div>
+        </div>
+        <div class="pickup-card">
+            <img src="img/pickup/image-3.jpg" alt="">
+            <div>
+                <p class="pickup-text">
+                    멋진 사진
+                </p>
+            </div>
+            <div class="read-more">
+                <a href="#">READ MORE</a>
+            </div>
+        </div>
     </div>
 
-    <div id="container" class="wrapper">
-        <main>
-            <article>
-                <h2 class="article-title"><a href="#">테스트테스트</a></h2>
-                <ul class="meta">
-                    <il><a href="#">2024/10/28</a></il>
-                    <li><a href="#">카테고리</a></li>
-                </ul>
-                <a href="#"><img src="main1.jpg" alt="test"></a>
-                <p class="text">
-                    정말 아무것도 모르겠습니다
-                </p>
-                <div class="readmore"><a href="#">READ MORE</a></div>
-            </article>
-        </main>
-
-        <aside id="sidebar">
-            <section class="author">
-                <img src="author.jpg" alt="테키스토">
-                <h3 class="side-title">어쩌라고</h3>
-                <p class="profil">
-
-                프로피리리리리릴
-                </p>
-            </section>
-        </aside>
+    <div class="container">
+        <main></main>
+        <aside></aside>
     </div>
+
+    <footer></footer>
 </body>
 
 <style>
     body {
-    font-family: 'Roboto', sans-serif;
-}
-
-    .nav-black {
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-left: 20px;
-        background-color: black;
-        height: 50px;
-        color: white;
-        display: flex;
-        justify-content: start;
-        gap: 20px;
-    }
-    .nav-item {
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-    .images {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        margin: 20px 0;
-    }
-    .image-item {
-        width: 20px;
-        height: auto;
-    }
-    .wrapper {
-        max-width: 1200px;
-        padding: 0 16px;
-        margin: 0 auto;
-    }
-    .readmore {
-        font-size: 0.875rem;
-        text-align: center;
-    }
-    .readmore a {
-        padding-bottom: 1px;
         color: #333;
-        position: relative;
+        font-size: 1rem;
+        font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+        margin: 0;
     }
-    #pickup {
+    .top-image {
+        padding-top: 10px;
+        padding-bottom: 6px;
+        padding-left: 16px;
+    }
+    ul {
         display: flex;
-        justify-content: space-between;
-        padding-top: 150px;
-        margin-bottom: 60px;
+        align-items: flex-start;
+        align-items: center;
+        gap: 20px;
+        background-color: #333;
+        height: 39px;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
     }
-    #pickup article {
+    li {
+        list-style: none;
+    }
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .pickup {
+        width: 100%;
+    }
+    .pickup-card {
         width: 32%;
     }
-    #pickup .article-title {
-        font-size: 1rem;
-        margin: 10px 0 15px 0;
-    }
-
-    #container {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 60px;
-    }
-    main {
-        width: 65%;
-    }
-    main article {
-        margin-bottom: 80px;
-    }
-    main .article-title {
-        font-size: 1.5rem;
-        margin: 10px 0 15px 0;
-    }
-    main ul {
-        display: flex;
-        justify-content: flex-start;
-        margin-bottom: 10px;
-    }
-    main li {
-        font-size: 0.875rem;
-        margin-right: 20px;
-    }
-    main .text {
-        padding: 10px 40px 30px 40px;
-    }
-
-    #sidebar {
-        width: 33%;
-        padding: 20px;
-    }
-    #sidebar .side-title {
-        font-size: 1.125rem;
-        font-weight: bold;
-        margin-bottom: 30px;
-    }
-    .author {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-    .author img {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        margin-bottom: 30px;
-    }
-    .author .profile {
-        font-size: 0.875rem;
-        text-align: left;
-    }
-
-
-    #pickup {
-        flex-direction: column;
-        padding-top: 140px;
-    }
-    #pickup article {
+    .pickup-card img {
         width: 100%;
-        margin-bottom: 30px;
     }
-
+    .pickup-text {
+        font-size: 16px;
+        margin: 0;
+    }
+    .read-more {
+        text-align: center;
+    }
+    .read-more a {
+        font-size: 12px;
+        color: #333;
+    }
 </style>
+
 </html>
