@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -13,18 +14,18 @@
         <div class="top-image">
         <img src="img/logo.svg" alt="">
         </div>
-        <nav>
-            <ul>
+        <nav id="navi">
+            <ul class="wrapper">
                 <li><a href="/link.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
                 <li><a href="#">Q&A</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="pickup">
+    <div class="pickup" class="wrapper">
         <div class="pickup-card">
             <img src="img/pickup/image.jpg" alt="">
             <div>
@@ -72,24 +73,146 @@
                 <div class="card-text">
                     안녕하십니까저는지금매우지쳐있습니다누군가살려주십시오
                 </div>
+                <div class="read-more"><a href="#">READ MORE</a></div>
+            </div>
+
+            <div class="blog-card">
+                <h2>タイトル</h2>
+                <div class="small-into">
+                    <div>2024/10/31</div>
+                    <div>カテゴリー</div>
+                </div>
+                <img src="img/main2.jpg" alt="" class="card-image-large">
+                <div class="card-text">
+                    허리피세요목집어넣으세요스트레칭하세요
+                </div>
+                <div class="read-more"><a href="#">READ MORE</a></div>
+            </div>
+
+            <div class="blog-card">
+                <h2>タイトル</h2>
+                <div class="small-into">
+                    <div>2024/10/31</div>
+                    <div>カテゴリー</div>
+                </div>
+                <img src="img/main3.jpg" alt="" class="card-image-large">
+                <div class="card-text">
+                    wwowowwowowowowowowowowowowowowowowowow
+                </div>
+                <div class="read-more"><a href="#">READ MORE</a></div>
             </div>
         </main>
-        <aside></aside>
+
+        <aside id="sidebar">
+            <section class="author">
+                <img src="img/author.jpg" alt="작가입니다?">
+                <h3 class="side-title">Name</h3>
+                <p class="profile">
+                    프로필프로필입니다프로필인데뭔가불만있냐프로필
+                    프로필프로필입니다프로필인데뭔가불만있냐프로필
+                    프로필프로필입니다프로필인데뭔가불만있냐프로필
+                </p>
+            </section>
+
+            <section class="ranking">
+                <h3 class="side-title">Ranking</h3>
+                <article>
+                    <a href="#">
+                        <img src="img/ranking1.jpg" alt="A">
+                        <h4 class="article-title"></h4>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="img/ranking2.jpg" alt="B">
+                        <h4 class="article-title"></h4>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="img/ranking3.jpg" alt="C">
+                        <h4 class="article-title"></h4>
+                    </a>
+                </article>
+            </section>
+
+            <section class="archive">
+                <h3 class="side-title">Archive</h3>
+                <ul>
+                    <li><a href="#">2024/10/30</a>(xx)</li>
+                    <li><a href="#">2024/10/30</a>(xx)</li>
+                    <li><a href="#">2024/10/30</a>(xx)</li>
+                    <li><a href="#">2024/10/30</a>(xx)</li>
+                    <li><a href="#">2024/10/30</a>(xx)</li>
+                    <li><a href="#">2024/10/30</a>(xx)</li>
+                    <li><a href="#">2024/10/30</a>(xx)</li>
+                    <li><a href="#">2024/10/30</a>(xx)</li>
+                    <li><a href="#">2024/10/30</a>(xx)</li>
+                </ul>
+            </section>
+        </aside>
     </div>
 
-    <footer></footer>
+    <footer id="footer">
+        <div class="contentwrapper">
+            <section class="item">
+                <h3 class="footer-title">About</h3>
+                <p>
+                    testtesttesttesttesttesttoasttesttesttesttesttesttesttesttesttesttesttest
+                    testtoasttesttesttesttesttesttesttesttesttesttesttesttesttoasttesttesttesttesttest
+                </p>
+                <ul class="about-list">
+                    <li><a href="#" class="arrow">번아웃</a></li>
+                    <li><a href="#" class="arrow">토스트아웃</a></li>
+                    <li><a href="#" class="arrow">아웃</a></li>
+                </ul>
+            </section>
+
+            <section class="item">
+                <h3 class="footer-title">Menu</h3>
+                <ul class="menu-list">
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#">CATEGORY</a></li>
+                    <li><a href="#">COLUMN</a></li>
+                    <li><a href="#">SERIES</a></li>
+                    <li><a href="#">Q&A</a></li>
+                </ul>
+            </section>
+
+            <section class="item">
+                <h3 class="footer-title">Twitter</h3>
+                <a class="Twitter-timeline" data-height="315" href="https://twitter.com/X?ref_src=twsrc%5Etfw">Tweets by X</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+        </div>
+
+        <p class="copyright">&copy; Travel &amp; Blog</p>
+    </footer>
 </body>
 
 <style>
+    @charset "UTF-8";
+
+    html {
+        font-size: 100%;
+    }
     body {
         color: #333;
-        font-size: 0.9rem;
+        font-size: 1rem;
         font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
         margin: 0;
+    }
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    img {
+        max-width: 100%;
     }
     h2 {
         margin: 0;
     }
+
     .top-image {
         padding-top: 10px;
         padding-bottom: 6px;
@@ -99,9 +222,8 @@
         display: flex;
         align-items: flex-start;
         align-items: center;
-        gap: 20px;
-        background-color: #333;
-        height: 39px;
+        gap: 20px; 
+        height: 50px;
         margin: 0;
         padding: 0;
         padding-left: 20px;
@@ -114,7 +236,37 @@
         color: white;
     }
 
+    .wrapper {
+        max-width: 1200px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+    .readmore {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+    .readmore a {
+        padding-bottom: 1px;
+        color: #333;
+        position: relative;
+    }
+    .readmore a::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background: #333;
+        transition: all 200ms ease;
+    }
+    .readmore a:hover::after {
+        opacity: 0;
+        transform: translateY(3px);
+    }
+
     .pickup {
+        display: flex;
         margin-top: 24px;
         display: flex;
         justify-content: space-around;
@@ -130,6 +282,7 @@
         margin: 0;
     }
     .read-more {
+        font-size: 0.875rem;
         text-align: center;
     }
     .read-more a {
@@ -137,20 +290,91 @@
         color: #333;
     }
 
+    #container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
     .container {
         display: flex;
-        margin-top: 64px;
-        /* justify-content: space-between; */
+        margin-top: 60px;
+        justify-content: space-between;
     }
     main {
-        /* background-color: blue; */
-        width: 70%;
+        width: 65%;
     }
-    aside {
-        height: 50px;
-        background-color: red;
-        width: 30%;
+    main article {
+        margin-bottom: 80px;
     }
+    main .article-title {
+        font-size: 1.5rem;
+        margin: 10px 0 15px 0;
+    }
+    main ul {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+    main li {
+        font-size: 0.875rem;
+        margin-right: 20px;
+    }
+    main .text {
+        padding: 10px 40px 30px 40px;
+    }
+
+    
+    #sidebar {
+        width: 33%;
+        padding: 20px;
+    }
+    #sidebar .side-title {
+        display: block;
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .author {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .author img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+    .author .profile {
+        font-size: 0.875rem;
+        text-align: left;
+    }
+    .ranking {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .ranking article {
+        margin-bottom: 30px;
+    }
+    .ranking .article-title {
+        font-size: 0.875rem;
+        font-weight: normal;
+        text-align: left;
+    }
+    .archive {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .archive ul {
+        display: block;
+        border-bottom: solid 1px #777;
+    }
+    .archive li {
+        font-size: 0.875rem;
+        border-top: solid 1px #777;
+        padding: 20px;
+        text-align: left;
+    }
+
     .small-into {
         display: flex;
         justify-content: start;
@@ -174,7 +398,121 @@
         font-size: 20px;
     }
 
+
+    #header {
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        z-index: 10;
+    }
+    #header .side-title {
+        padding: 20px 16px;
+        line-height: 1px;
+    }
+    #header .side-title a {
+        display: inline-block;
+    }
+
+
+    #footer {
+        font-size: 0.875rem;
+        background-color: #f7f7f7;
+    }
+    #footer .contentwrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #footer .item {
+        width: 30%;
+        margin: 0 0 30px;
+    }
+    #footer .item:last-child {
+        margin-right: 0;
+    }
+    #footer .footer-title {
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    #footer ul.about-list {
+        margin: 20px 0;
+    }
+    #footer ul.about-list li {
+        margin-bottom: 5px;
+    }
+    #footer ul.about-list .arrow {
+        position: relative;
+        display: inline-block;
+        padding-left: 12px;
+        color: #333;
+    }
+
+    #footer ul.about-list .arrow::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 0 6px 8px;
+        border-color: transparent transparent transparent #333;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -6px;
+    }
+    #footer .menu-list {
+        border-bottom: solid  1px #777;
+    }
+    #footer .menu-list > li {
+        border-top: solid  1px #777;
+        padding: 15px;
+        text-align: left;
+    }
+    #footer .copyright {
+        font-size: 0.750rem;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #navi {
+        background-color: #333;
+    }
+    #navi a {
+        color: #fff;
+    }
+    #navi ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #navi li {
+        font-size: 0.875rem;
+        padding: 10px 60px 10px 0;
+    }
+
+    #pickup {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 150px;
+        margin-bottom: 60px;
+    }
+    #pickup article {
+        width: 32%;
+    }
+    #pickup .article-title {
+        font-size: 1rem;
+        margin: 10px 0 15px 0;
+    }
+
     @media screen and (max-width: 768px) {
+        .header .side-title {
+            padding: 20px 16px;
+        }
+        .navi {
+            overflow-x: scroll;
+        }
+
         .pickup {
             flex-direction: column;
             align-items: center;
@@ -182,6 +520,30 @@
         .pickup-card {
             width: 90%;
             margin-bottom: 24px;
+        }
+        .pickup article {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            flex-direction: column;
+        }
+        .main {
+            width: 100%;
+        }
+
+        .sidebar {
+            width: 100%;
+            padding: 0;
+        }
+
+        .footer .content {
+            flex-direction: column;
+        }
+        .footer .item {
+            width: 100%;
+            margin-bottom: 30px;
         }
 
     }
